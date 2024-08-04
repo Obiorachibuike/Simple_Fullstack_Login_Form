@@ -35,7 +35,7 @@ const Signup = () => {
 
     try {
     
-     await axios.post(`${apiUrl}/api/auth/signup`, {
+     await axios.post(`${apiUrl}api/auth/signup`, {
       name,
         email,
         password

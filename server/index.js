@@ -20,7 +20,7 @@ app.use(express.urlencoded({ extended: true })); // Built-in middleware to parse
 
 // CORS options
 const corsOptions = {
-  origin: "http://localhost:5173", // Replace with your frontend URL
+  origin: "https://simple-fullstack-login-form.vercel.app/", // Replace with your frontend URL
   methods: "GET,POST,PUT,DELETE",
   allowedHeaders: "Content-Type,Authorization",
 };
