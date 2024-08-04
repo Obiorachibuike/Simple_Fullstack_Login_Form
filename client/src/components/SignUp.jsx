@@ -3,6 +3,7 @@ import axios from "axios"
 // import { AuthContext } from '../context/AuthContext';
 
 const Signup = () => {
+  const apiUrl = "https://simple-fullstack-login-form.onrender.com/";
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -34,7 +35,7 @@ const Signup = () => {
 
     try {
     
-     await axios.post("http://localhost:4000/api/auth/signup", {
+     await axios.post(`${apiUrl}/api/auth/signup`, {
       name,
         email,
         password
